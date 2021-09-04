@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, q {
+  line-height: 1.5;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-clip: content-box;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  width: 9em;
+  font-weight: 700;
+  color: #502050;
+}
+
+.bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: -1;
+}
+
+.flex {
+  display: flex;
+}
+.flex.clm {
+  flex-direction: column;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.inline-block {
+  display: inline-block;
+  margin-left: 2.1875em;
+  color: #502050;
+  font-weight: 700;
+}
+.inline-block.stars-b {
+  margin-left: 1em;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  margin-right: 1em;
+  overflow: hidden;
+}
+.circle .v-b {
+  width: 100%;
+}
+
+p {
+  color: #937b92;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    margin: 0;
+  }
+  .container .top-heading {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container .top-heading .title.flex.clm {
+    height: 17em;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .container .top-heading .title.flex.clm h1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .container .top-heading .title.flex.clm p {
+    width: 27.0625em;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.2em;
+  }
+  .container .top-heading .stars.flex.clm {
+    height: 276px;
+    width: 100%;
+    align-items: center;
+  }
+  .container .top-heading .stars.flex.clm .stars-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 323px;
+    height: 74px;
+    padding: initial;
+  }
+  .container .top-heading .stars.flex.clm .stars-block p {
+    align-self: center;
+    margin-left: initial;
+    margin-top: 8px;
+  }
+  .container .top-heading .stars.flex.clm .stars-block-2 {
+    align-self: initial;
+  }
+  .container .top-heading .stars.flex.clm .stars-block-3 {
+    align-self: initial;
+  }
+  .container .cards-container.flex {
+    flex-direction: column;
+    height: auto;
+    margin-top: 5em;
+  }
+  .container .cards-container.flex .card-name {
+    margin-right: 1.3em;
+    margin-left: 1.3em;
+  }
+  .container .cards-container.flex .card-name:not(:last-child) {
+    margin-bottom: 1.1em;
+  }
+  .container .cards-container.flex .card-name:nth-child(2) {
+    align-self: initial;
+  }
+  .container .cards-container.flex .card-name:last-child {
+    align-self: initial;
+    margin-bottom: 10em;
+  }
+}
+.inline-block.stars-b {
+  margin-left: initial;
+}
+
+.bg {
+  display: none;
+}
+
+body {
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+}
+
+.container {
+  max-width: 70em;
+  margin: 7.625em auto auto;
+}
+.container .top-heading {
+  justify-content: space-between;
+}
+.container .top-heading .title {
+  height: 14.5em;
+  justify-content: space-between;
+}
+.container .top-heading .title p {
+  width: 27.0625em;
+}
+.container .top-heading .stars {
+  width: 33.6875em;
+  height: 14.5em;
+  justify-content: space-between;
+}
+.container .top-heading .stars .stars-block {
+  width: 27.75em;
+  height: 3.1875;
+  border-radius: 10px;
+  background-color: #f7f2f7;
+  padding: 1.1em;
+}
+.container .top-heading .stars .stars-block-2 {
+  align-self: center;
+}
+.container .top-heading .stars .stars-block-3 {
+  align-self: flex-end;
+}
+.container .cards-container {
+  height: 21em;
+  margin-top: 5em;
+}
+.container .card-name {
+  background-color: #502050;
+  border-radius: 10px;
+  padding: 3em 1.5em;
+  justify-content: space-between;
+  max-height: 18em;
+}
+.container .card-name:not(:last-child) {
+  margin-right: 1.1em;
+}
+.container .card-name:nth-child(2) {
+  align-self: center;
+}
+.container .card-name:last-child {
+  align-self: flex-end;
+}
+.container .card-name .cards-title {
+  vertical-align: center;
+}
+.container .card-name .cards-title .b-name {
+  color: white;
+  font-weight: 500;
+}
+.container .card-name .cards-title .v-buyer {
+  color: #ee68a4;
+}
+.container .card-name q {
+  text-align: center;
+  margin-top: 2.5em;
+  color: white;
+  font-weight: 400;
+  font-size: 0.9em;
+}/*# sourceMappingURL=main-style.css.map */

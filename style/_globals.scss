@@ -1,0 +1,81 @@
+@import "variables";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin border {
+    border:black solid 5px;
+}
+
+p , q{
+    line-height: 1.5;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position:top left ;
+    // background-origin: content-box;
+    background-clip: content-box;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+
+
+}
+
+h1 {
+    width: 9em;
+    font-weight: 700;
+    color: $Very-Dark-Magenta;
+}
+
+
+.bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    user-select: none;
+    z-index: -1;
+}
+
+
+
+.flex {
+    display: flex;
+    &.clm {
+        flex-direction: column;
+    }
+    &.wrap {
+        flex-wrap: wrap;
+    }
+    
+}
+
+.inline-block {
+    display: inline-block;
+    margin-left: 2.1875em;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    &.stars-b {
+        margin-left: 1em;
+    }
+}
+
+.circle {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    // @include border();
+    margin-right: 1em;
+    overflow: hidden;
+    .v-b {
+        width: 100%;
+    }
+}
+
+p {
+    color: $Dark-Grayish-Magenta;
+    font-weight: 500;
+}

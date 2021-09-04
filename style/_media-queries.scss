@@ -1,0 +1,108 @@
+@media only screen and (max-width:400px) {
+
+    
+    .container {
+
+        margin: 0;
+        .top-heading{
+            flex-direction: column;
+            justify-content: space-between;
+            // padding: 25px;
+            .title.flex.clm {
+                height: 17em;
+                justify-content: space-between;
+                width: 100%;
+                h1 {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+                p {
+                    width: 27.0625em;
+                    text-align: center;
+                    width: 100%;
+                    // margin: 0 auto;
+                    margin-bottom: 1.2em;
+                }
+            }
+
+        .stars.flex.clm {
+
+            height: 276px;
+            width: 100%;
+            align-items: center;
+            .stars-block {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 323px;
+                height: 74px;
+                // margin: 0 auto;
+                // position: relative;
+                padding: initial;
+                p {
+                    align-self: center;
+                    margin-left: initial;
+                    margin-top: 8px;
+                }
+            }
+            .stars-block-2 {
+                align-self: initial;
+            }
+            .stars-block-3 {
+                align-self: initial;
+            }
+
+        }    
+
+
+    
+        }
+
+        .cards-container.flex {
+
+            flex-direction: column;
+            height:auto;
+            margin-top: 5em;
+            .card-name {
+                margin-right: 1.3em;
+                margin-left: 1.3em;
+                &:not(:last-child) {
+                    margin-bottom: 1.1em;
+                    // margin-right: initial;
+                }
+        
+                &:nth-child(2) {
+                    align-self: initial;
+                }
+        
+                &:last-child {
+                    align-self: initial;
+                    margin-bottom: 10em;
+                }
+            }
+        }
+
+
+
+
+    }
+}
+
+
+
+
+
+//Globals
+.inline-block.stars-b {
+    margin-left: initial;
+}
+
+.bg {
+    display: none;
+}
+body {
+    background-image: url(../images/bg-pattern-top-mobile.svg) , url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat , no-repeat;
+    background-position:top, bottom;
+}
